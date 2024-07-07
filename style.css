@@ -9,6 +9,7 @@ a {
 .container{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .logo{
     position: absolute;
@@ -24,7 +25,7 @@ a {
 }
 .searcharea{
     position: fixed;
-    right: 90px;
+    right: 80px;
     top: 50px;
     width: 170px;
     height: 45px;
@@ -149,6 +150,7 @@ span{
     color: #FF0000;
 }
 .productsection{
+    overflow: hidden;
     width: 85%;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
@@ -234,6 +236,7 @@ span{
     transition: all ease 0.3s;
 }
 .about{
+    overflow: hidden;
     font-family: Roboto;
     display: flex;
     width: 85%;
@@ -275,6 +278,7 @@ span{
     letter-spacing: 0.5px;
 }
 .notification{
+    overflow: hidden;
     width: 100%;
     height: 250px;
     margin-bottom: 30px;
@@ -284,7 +288,7 @@ span{
     align-items: center;
     border-bottom: 2px solid rgba(0, 0, 0, 0.03);
 }
-.notification h3{
+.notification .ht h3{
     font-size: 2rem;
     color: rgb(56,56,56);
 }
@@ -332,4 +336,53 @@ footer{
 footer p{
     text-align: center;
     color: #F2F2F2;
+}
+@media (max-width: 412px){
+    .notificationinput{
+        width: 360px;
+        position: relative;
+        left: 1px;
+}
+    .notification h3{
+        text-align: center;
+        position: absolute;
+        left: 400px;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .section1 img{
+        height: 210px;
+    }
+    .section1{
+        position: absolute;
+        top: 40%;
+        left: 80px;
+    }
+    .se1{
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+    .section1button{
+        width: 15%;
+        position: absolute;
+        left: 26%;
+        top: 70%;
+        transform: translate(-90%,-50%);
+    }
+    .section1button h1,h2{
+        font-size: 3rem;
+        letter-spacing: 2.5px;
+    }
+    .section1button h1{
+        letter-spacing: 22px;
+    }
+    .searcharea{
+        right: 28%;
+        top: 95px;
+    }
+    .aboutbox1 img{
+        height: 210px;
+    }
 }
